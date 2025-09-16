@@ -4,9 +4,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-**/application-local.yml
-**/mcp-servers.json
-
 ### STS ###
 .apt_generated
 .classpath
@@ -34,5 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-tmp

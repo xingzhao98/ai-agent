@@ -1,6 +1,22 @@
 spring:
   application:
     name: ai-agent
+  ai:
+    mcp:
+      client:
+#        stdio:
+#          servers-configuration: classpath:mcp-servers.json
+        enabled: true
+        name: my-mcp-client
+        version: 1.0.0
+        request-timeout: 30s
+        type: SYNC
+        sse:
+          connections:
+            server1:
+              url: http://localhost:8127
+
+
   profiles:
     active: local
 
