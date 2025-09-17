@@ -6,7 +6,7 @@ spring:
       client:
 #        stdio:
 #          servers-configuration: classpath:mcp-servers.json
-        enabled: true
+        enabled: false
         name: my-mcp-client
         version: 1.0.0
         request-timeout: 30s

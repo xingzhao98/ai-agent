@@ -16,6 +16,7 @@ import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.tool.ToolCallback;
 import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.ai.vectorstore.VectorStore;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -45,6 +46,7 @@ public class LoveApp {
     private ToolCallback[] allTools;
 
     @Resource
+    @Lazy
     private ToolCallbackProvider toolCallbackProvider;
 
 
